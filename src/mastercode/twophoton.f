@@ -43,20 +43,20 @@ c
 c
 c     Functions for Helium I
 c
-      double precision pol5
-      double precision qss,qsp,frs3,fusp
+c      double precision pol5
+c      double precision qss,qsp,frs3,fusp
 c
       qpr(u) = 4.74d-4*(u ** (-0.151d0))
       qel(u) = 0.57d-4*(u ** (-0.373d0))
 c     
-      pol5(x) = dmax1(0.0d0,(((((((((-(6.5289d0*x))+41.54554d0)*x)-
-     &  97.135778d0)*x)+97.0517d0)*x)-32.02831d0)*x)-0.045645d0)
+c      pol5(x) = dmax1(0.0d0,(((((((((-(6.5289d0*x))+41.54554d0)*x)-
+c     &  97.135778d0)*x)+97.0517d0)*x)-32.02831d0)*x)-0.045645d0)
 c
-      qss(u) = 1.d-8*pol5(u ** 0.3333333d0)
-      qsp(u) = 5.73d-9*pol5((0.175d0+(0.2d0*u)) ** 0.3333333d0)
+c      qss(u) = 1.d-8*pol5(u ** 0.3333333d0)
+c      qsp(u) = 5.73d-9*pol5((0.175d0+(0.2d0*u)) ** 0.3333333d0)
 c
-      frs3(u) = 0.775d0*(u ** 0.0213d0)
-      fusp(u) = 0.42d0*(u ** 0.23d0)
+c      frs3(u) = 0.775d0*(u ** 0.0213d0)
+c      fusp(u) = 0.42d0*(u ** 0.23d0)
 c
       invpi4 = 1/(4.d0*pi)
 c

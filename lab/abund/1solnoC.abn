@@ -1,0 +1,53 @@
+%
+%	abundance file: 1.0sol.abn
+%
+%	Contains default solar abundances
+%
+%	FORMAT
+%	Title
+%	# entries
+%	Z  Abundance	
+%	.
+%	.
+%	.
+%
+%
+%	Note: negative abundances are logarithmic relaive to H = 0.0
+%
+%	Elements not included in the data file ATDAT will not be read
+%
+%	Elements not present in this file will have no effect on the 
+%	default abundances.
+%
+%	The Header lines are not needed but they are useful
+%
+%   Abundances as used in Starburst I paper.
+%   for other abundances, use He/H = 0.0737+0.024*Z/Z_sol
+%                       & log{N/H}=log[1.1e-5*Z/Z_sol +5.2e-5*(Z/Z_sol)^2]
+%                         (Groves et al. ApJ, 2004)
+%						& log{C/H}=log[6.0e-5*Z/Z_sol +2.0e-4*(z/Z_sol)^2]
+%						  (Garnett et al. 1999, ApJ, 513, 168)
+Solar Ref: Kewley & Dopita  + Asplund  C N O Si -4.49 Fe -4.55
+22
+ 1   1.00
+ 2  -1.01
+ 3  -11.3
+ 4  -10.9
+ 5  -9.0
+ 6  -9.59
+ 7  -4.20
+ 8  -3.34
+ 9  -6.10
+10  -3.91
+11  -5.75
+12  -4.42
+13  -5.61
+14  -4.49
+15  -6.48
+16  -4.79
+17  -6.40
+18  -5.20
+19  -7.05
+20  -5.64
+26  -4.55
+28  -5.68

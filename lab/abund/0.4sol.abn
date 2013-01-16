@@ -1,0 +1,52 @@
+%
+%	abundance file: 0.4sol.abn
+%
+%
+%	FORMAT
+%	Title
+%	# entries
+%	Z  Abundance	
+%	.
+%	.
+%	.
+%
+%
+%	Note: negative abundances are logarithmic relaive to H = 0.0
+%
+%	Elements not included in the data file ATDAT will not be read
+%
+%	Elements not present in this file will have no effect on the 
+%	default abundances.
+%
+%   Abundances relative to solar ref.
+%   for He use:			 He/H = 0.0737+0.024*Z/Z_sol
+%   For Secondary elements  use                  
+%						& log{N/H}=log[1.1e-5*Z/Z_sol +4.9e-5*(Z/Z_sol)^2]
+%                         (Groves et al. ApJ, 2004)
+%						& log{C/H}=log[6.0e-5*Z/Z_sol +2.0e-4*(z/Z_sol)^2]
+%						  (Garnett et al. 1999, ApJ, 513, 168)
+%   Solar Ref: Asplund, Grevesse & Sauval 2005, ASP Conf. Ser. 336 eds T.G. Barnes & F.N. Bash
+Solx0.4
+22
+ 1   1.00
+ 2  -1.079
+ 3  -11.69
+ 4  -11.29
+ 5  -9.39
+ 6  -4.25
+ 7  -4.91
+ 8  -3.74
+ 9  -6.49
+10  -4.30
+11  -6.15
+12  -4.82
+13  -6.00
+14  -4.85
+15  -6.88
+16  -5.19
+17  -6.79
+18  -5.59
+19  -7.45
+20  -6.04
+26  -4.76
+28  -6.08

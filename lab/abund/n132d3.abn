@@ -1,0 +1,20 @@
+%
+%	Based on an LMC SN1987a mixed model Oxygen Layer
+%	Woosely 1986
+%	Woosely and Pinto 1988
+%
+Oxygen Rich Plasma intial guess
+12
+ 1  -6.00
+ 2  -3.00
+ 6  -1.50
+ 7  -5.00
+ 8   1.00
+10  -1.70
+12  -2.00
+14  -1.00
+16  -1.50
+18  -3.00
+20  -2.50
+26  -3.00
+

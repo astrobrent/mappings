@@ -1,0 +1,63 @@
+time ./map3r << EOF
+yes change abund 
+file
+abund/1sol.abn
+no change abund
+no disable react 
+yes include dust
+yes change depl
+file
+abund/1sol.dpl
+no change depl
+MRN  ---------- MRN grain dist.
+no PAH
+yes IR
+Intermediate res. IR
+P5 model
+Calculate a preion. balance
+C Equilibrium ionisation and equilibrium temp.
+A  :   Non-thermal component (c*nu**Alpha)
+-1.4 PowerLaw
+1.0 1.0
+5 eV Turn-on
+1000 eV Turn off
+1e-14 scaling factor
+Xit with current source
+No cosmic ray heating
+4.0e4 
+100
+1e3
+0.5
+Xit with current balance
+A  :   Non-thermal component (c*nu**Alpha)
+-1.4 PowerLaw
+1.0 1.0
+5 eV Turn-on
+1000 eV Turn off
+1e-16 scaling factor
+Xit with current source
+No cosmic ray heating
+plane II geom
+b isoBaric 
+1.0e6  ----- P/k
+1e4    ----- T estimate
+1.0 filling factor
+U
+-2.0
+0.5 geom dilution
+Equilibrium balance
+0.05 dtau
+F  :   Column Density limited, atom, ion
+22.0 ----------------Final column density
+1 -------------------Applies to H
+1 -------------------Ionic Stage HI
+G  :   Everything
+2 6 8 10 
+run01
+run01
+dust_Z1A_GS40_1600_U+0.0_b1.0e6_a-1.4_HI=22_tau0.05
+
+X
+EOF
+
+

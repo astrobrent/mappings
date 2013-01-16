@@ -1,0 +1,26 @@
+%
+%  Standard dust depletion Data v1.1.0m
+%   Depletion amounts given as %in gas (ie 1-x=%in dust)
+%   Brent Groves
+%
+%
+%  MAPPINGS III v1.0.0r
+%	
+Standard dust depletion Data v1.1.0m
+16
+1	1.000
+2	1.000
+6	0.500
+7	0.500
+8	0.580
+10	1.000
+11	0.250
+12	0.070
+13	0.036
+14	0.13
+16	0.460
+17	0.500
+18	1.000
+20	0.003
+26	0.043
+28	0.040

@@ -1,0 +1,36 @@
+%
+Mappings III Q prefs Asplund Abund. 1.0.0q
+ 16
+ 1  H      1   1.00797  1.00E+0  1.000  2
+ 2  He     2   4.00260  9.77E-2  1.000  3
+ 3  C      6  12.01115  2.57E-4  0.708  7
+ 4  N      7  14.00670  6.03E-5  0.588  8
+ 5  O      8  15.99940  4.57E-4  0.617  9
+ 6  Ne    10  20.18300  1.23E-4  1.000  11
+ 7  Na    11  22.98980  1.78E-6  0.100  12
+ 8  Mg    12  24.31200  3.39E-5  0.083  13 
+ 9  Al    13  26.98150  2.46E-6  0.041  14
+10  Si    14  28.08600  3.24E-5  0.155  15
+11  S     16  32.06400  1.62E-5  0.832  17
+12  Cl    17  35.45300  3.98E-7  0.100  18
+13  Ar    18  39.94800  6.31E-6  1.000  19
+14  Ca    20  40.08000  2.29E-6  0.003  21
+15  Fe    26  55.84700  2.82E-5  0.049  27
+16  Ni    28  58.71000  2.09E-6  0.010  29
+collsional rate calculation method (def 0)
+0
+charge transfer rate calculation method (def 0)
+0
+expert mode (def 0)
+0
+%
+% misc data can be stored after this comment
+% Here 4 species that are not often used are
+% Stored. To use them place them above and
+% update the count and column 1.
+%\
+ 7  Na    11  22.98980  3.80E-6  0.250  12
+ 9  Al    13  26.98150  8.15E-7  0.020  14
+12  Cl    17  35.45300  1.45E-7  0.500  18
+16  Ni    28  58.71000  1.78E-6  0.040  29
+

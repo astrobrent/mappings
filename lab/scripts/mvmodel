@@ -1,0 +1,7 @@
+mkdir tests/HIItest
+mv *.ph* tests/HIItest
+mv *.sou tests/HIItest
+mv *.nfn tests/HIItest
+mv *.bln tests/HIItest
+mv *.test tests/HIItest
+

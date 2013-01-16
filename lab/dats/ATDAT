@@ -1,0 +1,71 @@
+%
+%	A local copy of map.prefs will overrride the default
+%	dats/ATDAT file.  The formats should be the same, but
+%	then number of atoms, ionisation limits and abundances
+%	can be changed.
+%
+%	RSS 12/90
+%					
+%	Simple atomic data, Default abundances, depletions,weights
+%	names,etc				
+%
+%	RSS 7/90
+%					
+%	Format:Title of file
+%	Number of atoms used (max 16)			
+%	#	Name	Z	A	Default Abund Max ion stage
+%	1-2	5-8	11-12	15-22	25-30  33-34
+%
+%	Abundances ref: Russell 1989 PhD Thesis
+%	                Solar Vicinity ISM values
+%
+%	-ve abundances are taken as [M/H] relative to [H] = 0.0
+%
+%	Maximum Z allowed = 28 (Nickel)
+%	
+%	Calculation selectors:
+%
+%%	collisional ionisation rate calculations;
+%	0 = Arnaud and Rothenflug 1985 method, from Younger 1983
+%	1 = Landini & Monsignori Fosse 1990 & Shull 1982 method
+%
+%%	charge transfer rate calculations;
+%	0 = Arnaud and Rothenflug 1985 method
+%	1 = OLD mappings data and methods
+%
+%%	Expert mode for debugging and hacking by Ralph
+%	0 = normal running mode, do not change
+%	1 or more, not documented or supported, see Ralph.
+%
+%%		Note: % delineate header lines only, they are not 
+%		general comment characters.
+%
+%  MAPPINGS III v1.0.0r
+%			
+Atomic data v1.0.0r 
+16
+ 1  H      1   1.00797  1.00E+0  1.000  2
+ 2  He     2   4.00260  1.00E-1  1.000  3
+ 3  C      6  12.01115  8.13E-4  0.500  7
+ 4  N      7  14.00670  3.72E-5  0.600  8
+ 5  O      8  15.99940  5.01E-4  0.600  9
+ 6  Ne    10  20.18300  7.94E-5  1.000  11
+ 7  Na    11  22.98980  3.80E-6  0.250  12
+ 8  Mg    12  24.31200  3.72E-5  0.200  13 
+ 9  Al    13  26.98150  8.15E-7  0.020  14
+10  Si    14  28.08600  4.27E-5  0.100  15
+11  S     16  32.06400  1.15E-5  1.000  17
+12  Cl    17  35.45300  1.45E-7  0.500  18
+13  Ar    18  39.94800  2.63E-6  1.000  19
+14  Ca    20  40.08000  1.32E-6  0.003  21
+15  Fe    26  55.84700  2.63E-5  0.010  27
+16  Ni    28  58.71000  1.78E-6  0.040  29
+collsional rate calculation method (def 0)
+0
+charge transfer rate calculation method (def 0)
+0
+expert mode (def 0)
+0
+%
+% misc data can be stored after this comment
+%

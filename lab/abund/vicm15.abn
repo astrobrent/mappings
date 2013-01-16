@@ -1,0 +1,41 @@
+%
+%	FORMAT
+%	Title
+%	# entries
+%	Z  Abundance	
+%	.
+%	.
+%	.
+%
+%
+%	Note: negative abundances are logarithmic relaive to H = 0.0
+%
+%	Elements not included in the data file ATDAT will not be read
+%
+%	Elements not present in this file will have no effect on the 
+%	default abundances.
+%
+%	The Header lines are not needed but they are useful
+%
+%       Russell 1989
+%
+%
+Solar Vicinity -1.5
+16
+ 1   1.00
+ 2  -1.00
+ 6  -4.59
+ 7  -5.93
+ 8  -4.30
+10  -5.10
+11  -6.92
+12  -5.53
+13  -7.87
+14  -5.47
+16  -6.44
+17  -8.34
+18  -7.58
+20  -6.98
+26  -6.08
+28  -7.25
+

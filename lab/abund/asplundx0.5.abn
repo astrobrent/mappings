@@ -1,0 +1,45 @@
+%
+%	SOLAR ABUNDANCES:ref Grevesse & Sauval 1998 Space Science Revies 85, 161
+%	meteoritic abundances with C,N,O, Si, Fe from Asplund papers (2000,01, 02)
+%	All approx +/- 0.05
+%	Half solar everything except He, N which are secondary.
+%	He/H = 0.0737 + 0.0293*(Z/Zo)
+%	[N/O] = log(10^-1.6 + 10^(2.33 + [O/H]))
+%
+%	FORMAT
+%	Title
+%	# entries
+%	Z  Abundance	
+%	.
+%	.
+%	.
+%
+%
+%	Note: negative abundances are logarithmic relaive to H = 0.0
+%
+%	Elements not included in the data file ATDAT will not be read
+%
+%	Elements not present in this file will have no effect on the 
+%	default abundances.
+%
+%	The Header lines are not needed but they are useful
+%
+Solar abundance from Grevesse & Sauval, and Asplund (2000)
+16
+ 1   1.00
+ 2  -1.054
+ 6  -3.911
+ 7  -4.722
+ 8  -3.611
+10  -4.221
+11  -5.981
+12  -4.721
+13  -5.811
+14  -4.791
+16  -5.101
+17  -7.021
+18  -5.901
+20  -5.951
+26  -4.841
+28  -6.051
+

@@ -1,0 +1,50 @@
+%
+%	Resonance line data v1.0.0r 
+%
+%	Altered format for mappings 2.000
+%	incompatible with old mappings
+%	
+%	Resondat will now only contain long lambda>2000A
+%	or weak contributions like Cl
+%	All other resonance lines will now be in XLINDAT
+%
+%	These line are non-transfereable!!!!
+%
+%	Emilin etc are used exclusively by XLINDAT lines
+%
+%
+%	FORMAT:
+%	Title
+%	#lines (nlines)
+%
+%	atom,ion,hv (ergs),Coll.Str/Stat.Wt 1,Absp. Osc. Str.
+%
+%	commented out H and He lines
+%	until general optical transfere
+%	code is implemeted
+%	RSS 2/91
+%
+%
+%  1  1  2.042573E-11   0.000  0.0600
+%  2  1  3.399442E-11   0.000  0.2760
+%  2  2  6.539150E-11   0.000  0.5550
+%
+Resonance line data v1.0.0r 
+17
+  2  1  1.833705E-12   0.000  0.5390
+ 12  2  7.097755E-12   10.10  0.9430
+ 14  2  1.51914E-11    1.531  0.2940
+ 17  1  1.472874E-11   0.267  0.1120
+ 17  1  1.665200E-11   0.167  0.0881
+ 17  2  1.861045E-11   0.036  0.0159
+ 17  3  1.9643E-11     0.010  0.0072
+ 17  4  2.02441E-11    0.583  0.5500
+ 17  5  2.23047E-11    0.737  0.5200
+ 17  6  2.95884E-11    4.557  1.2800
+ 18  1  2.283E-11      0.366  0.1930
+ 18  1  1.871E-11      0.591  0.3150
+ 18  2  2.150250E-11   0.065  0.0089
+ 18  3  2.259769E-11   0.051  0.0327
+ 18  4  2.34658E-11    0.096  0.0860
+ 18  5  2.39066E-11    0.440  0.5000
+ 18  6  2.60345E-11    0.583  0.4800

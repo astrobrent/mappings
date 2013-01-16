@@ -1,0 +1,41 @@
+%
+%	PAH data, IP, Photo crossection/C atom, yield factors
+%
+%   ref Vestrade et al .... 1990
+%	based on coronine and extrapolatiojn to Nc = 80 for inter
+%	stellar PAHs. Real rough.
+%
+%	IP (eV) = 4.8 + C/b
+%	taking C = 11 2/3 and b ~12A for nc = 80
+%	=> IP = ~5.8V, call it 6V.
+%
+%       fit to photo crossections scaled to n = 80
+%	given as IP	0
+%	1st point	sigma  (Mbarns)
+%	2nd point	sigma
+%
+%	Yield, same slopes as coronene, shifted to IP = 6V
+%	
+%	IP	0
+%	ist point	Yield
+%
+%
+%  Format:
+%       Title
+%       # lines
+%	Photo-xsection
+%	#lines
+%	Yield curve
+%
+%
+PAH data v1.0.0r 
+ 5
+ 6.00    0
+10.96  600
+14.43 1560
+15.92 2800
+19.33 2000
+ 3
+ 6.00 0.000
+ 9.72 0.625
+16.56 1.000

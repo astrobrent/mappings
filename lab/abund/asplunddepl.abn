@@ -1,0 +1,42 @@
+%
+%	SOLAR ABUNDANCES:ref Grevesse & Sauval 1998 Space Science Revies 85, 161
+%	meteoritic abundances with C,N,O, Si, Fe from Asplund papers (2000,01, 02)
+%	All approx +/- 0.05
+%
+%	FORMAT
+%	Title
+%	# entries
+%	Z  Abundance	
+%	.
+%	.
+%	.
+%
+%
+%	Note: negative abundances are logarithmic relaive to H = 0.0
+%
+%	Elements not included in the data file ATDAT will not be read
+%
+%	Elements not present in this file will have no effect on the 
+%	default abundances.
+%
+%	The Header lines are not needed but they are useful
+%
+Solar abundance from Grevesse & Sauval, and Asplund (2000)
+16
+ 1   1.000
+ 2  -0.987
+ 6  -3.911
+ 7  -4.422
+ 8  -3.532
+10  -3.920
+11  -6.282
+12  -5.119
+13  -7.209
+14  -5.490
+16  -4.800
+17  -7.021
+18  -5.600
+20  -8.173
+26  -4.841
+28  -7.148
+

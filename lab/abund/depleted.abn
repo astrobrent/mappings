@@ -1,0 +1,53 @@
+%
+%	SOLAR ABUNDANCES:ref anders & grevesse 1989 geochimica et cosmochmnica
+%	acta, 53:197
+%
+%	Depleted heavy elemets: Ca*0.1,Fe*0.01,Ni*0.01
+%
+%	FORMAT
+%	Title
+%	# entries
+%	Z  Abundance	
+%	.
+%	.
+%	.
+%
+%
+%	Note: negative abundances are logarithmic relaive to H = 0.0
+%
+%	Elements not included in the data file ATDAT will not be read
+%
+%	*************************************************************
+%	Fe abundances reduced by factor of 10 to correct for 
+%	gas phase depletion in photoionised zones
+%	*************************************************************
+%
+%	Elements not present in this file will have no effect on the 
+%	default abundances.
+%
+%	The Header lines are not needed but they are useful
+%
+Depleted Ca Fe Ni from solar.
+22
+ 1   1.00
+ 2  -1.01
+ 3  -11.84
+ 4  -11.85
+ 5  -9.3
+ 6  -3.44
+ 7  -3.95
+ 8  -3.07
+ 9  -7.44
+10  -3.91
+11  -5.67
+12  -4.42
+13  -5.53
+14  -4.45
+15  -6.55
+16  -4.79
+17  -6.5
+18  -5.44
+19  -6.88
+20  -6.64
+26  -7.33
+28  -7.75

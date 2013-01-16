@@ -1,0 +1,2 @@
+ VALUE>=0 : IERRTRAP ENABLED ;  VALUE=-1 : DISABLED
+           0

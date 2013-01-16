@@ -1,0 +1,38 @@
+time ./map3r << EOF
+yes -----------------change abund 
+file                 ***************************
+abund/1sol.abn
+no ------------------change abund
+no ------------------disable react 
+no -----------------include dust
+P5 model
+Default preion. balance
+A  :   Non-thermal component (c*nu**Alpha)
+-2.4 PowerLaw
+1.0 1.0      ------ energy and value at energy
+5 eV Turn-on
+1000 eV Turn off
+1e-16 scaling factor
+Xit with current source
+No cosmic ray heating
+plane II geom
+C  : isoChoric,  (const volume)
+1000    ------- density 
+1.0 filling factor
+U
+-2.0    ------- log U
+0.5 geom dilution
+Equilibrium balance
+0.05 dtau
+F  :   Column Density limited, atom, ion
+16   ----- log column
+1    ----- H I
+1
+G  :   Everything
+2 6 8 10 
+run01
+run01
+nodust_HI=10^16_-2.4_hydlin
+
+X
+EOF

@@ -1,0 +1,41 @@
+%
+%	SOLAR ABUNDANCES:ref anders & grevesse 1989 geochimica et cosmochmnica
+%	acta, 53:197
+%
+%	INterpolated for [Fe/H] = -0.5
+%	FORMAT
+%	Title
+%	# entries
+%	Z  Abundance	
+%	.
+%	.
+%	.
+%
+%
+%	Note: negative abundances are logarithmic relaive to H = 0.0
+%
+%	Elements not included in the data file ATDAT will not be read
+%
+%	Elements not present in this file will have no effect on the 
+%	default abundances.
+%
+%	The Header lines are not needed but they are useful
+%
+Interpolated to -0.5
+16
+ 1   1.00
+ 2  -1.10
+ 6  -3.94
+ 7  -4.45
+ 8  -3.32
+10  -4.16
+11  -6.17
+12  -4.72
+13  -5.88
+14  -4.75
+16  -5.29
+17  -7.0
+18  -5.69
+20  -5.94
+26  -4.83
+28  -6.25

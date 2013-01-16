@@ -1,0 +1,42 @@
+%
+%	SOLAR ABUNDANCES:ref anders & grevesse 1989 geochimica et cosmochmnica
+%	acta, 53:197
+%
+%
+%	FORMAT
+%	Title
+%	# entries
+%	Z  Abundance	
+%	.
+%	.
+%	.
+%
+%
+%	Note: negative abundances are logarithmic relaive to H = 0.0
+%
+%	Elements not included in the data file ATDAT will not be read
+%
+%	Elements not present in this file will have no effect on the 
+%	default abundances.
+%
+%	The Header lines are not needed but they are useful
+%
+Solar Vicinity Abundances from Russell 1989
+16
+ 1   1.00
+ 2  -1.00
+ 6  -3.09
+ 7  -4.43
+ 8  -3.30
+10  -4.10
+11  -5.42
+12  -4.43
+13  -6.07
+14  -4.37
+16  -4.94
+17  -6.84
+18  -5.58
+20  -5.88
+26  -4.58
+28  -5.75
+

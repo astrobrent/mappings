@@ -1,0 +1,6 @@
+rm -f *.sh*
+rm -f *.bln
+rm -f *.sou
+rm -f *.nfn
+rm -f *~
+rm -f fort.*

@@ -1,0 +1,64 @@
+time ./map3r << EOF
+yes -----------------change abund 
+file                 ***************************
+abund/1sol.abn
+no ------------------change abund
+no ------------------disable react 
+yes -----------------include dust
+yes -----------------change depletions
+file
+abund/1sol.dpl
+no ------------------change depletions
+Shattering grain profile ---- note: change DUSTDAT to full
+-3.3 ----------------power law
+40 ------------------graphite grain min. radius
+1600 ----------------graphite grain max. radius
+40 ------------------silicate grain min. radius
+1600 ----------------silicate grain max. radius
+1.8 -----------------graphite grain density
+3.5 -----------------silicate grain density
+yes -----------------Include PAH molecules
+0.6 -----------------fraction of Carbon Dust Depletion in PAHs
+Q -------------------Q-value QHDH < Value PAH photodissociation parameter
+1000 ----------------PAH switch on Value
+yes -----------------Destroy all C grains with PAHs
+yes -----------------Evaluate dust temperatures and IR flux
+Quick----------------IR Model
+no   ----------------Output dust temperature data
+P5 model			 PDR Z=0.2sol, P/k=1e6, t=10Myr
+Default preion. balance
+Input data file      ****************************
+SB99_1sol_5Myr.source
+0 -------------------turn-on energy
+15000 ---------------cut-off energy
+E  ------------------Bremsstrahlung component (c*exp(-nu/k2e7))
+3e6 -----------------Temperature
+3e18 ----------------Flux
+13.6 -------------------turn-on energy
+15000 ---------------cut-off energy
+1.0 -----------------scaling factor
+X
+No ------------------cosmic ray heating
+s -------------------Spherical geometry
+L -------------------Luminosity of Source
+T -------------------Total Luminosity
+40.146                ***************************
+B -------------------Isobaric Structure
+1E+06                Pressure (P/k)**************
+1e4 -----------------Assumed Temperature
+1.0 -----------------Filling Factor
+d -------------------Distance
+1.97E+20             (cm)************************
+yes -----------------Integrate over whole sphere
+Equilibrium ---------ionisation balance
+0.04 ----------------photon absorption fraction
+F  :   Column Density limited
+22.0 ----------------Final column density
+1 -------------------Applies to H
+1 -------------------Ionic Stage HI
+D                    Output Standard + final source + nu-Fnu spectrum
+P60.2
+PDR Z=1sol, P/k=1e4, t=5Myr
+X
+EOF
+

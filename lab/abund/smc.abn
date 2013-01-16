@@ -1,0 +1,39 @@
+%
+%	SMC standard abundances: Ref: Russell & Dopita
+%
+%	FORMAT
+%	Title
+%	# entries
+%	Z  Abundance	
+%	.
+%	.
+%	.
+%
+%
+%	Note: negative abundances are logarithmic relaive to H = 0.0
+%
+%	Elements not included in the data file ATDAT will not be read
+%
+%	Elements not present in this file will have no effect on the 
+%	default abundances.
+%
+%	The Header lines are not needed but they are useful
+%
+SMC abundances from Russell 1989
+16
+ 1   1.00
+ 2  -1.09
+ 6  -4.24
+ 7  -5.37
+ 8  -3.97
+10  -4.73
+11  -5.92
+12  -5.01
+13  -5.60
+14  -4.69
+16  -5.41
+17  -7.30
+18  -6.29
+20  -6.16
+26  -5.11
+28  -6.14

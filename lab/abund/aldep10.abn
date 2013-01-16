@@ -1,0 +1,47 @@
+%
+%	Sample abundance file: ALLEN.DAT
+%
+%	Contains the abundances from Allen 1973 (AQ3)
+%
+%	FORMAT
+%	Title
+%	# entries
+%	Z  Abundance	
+%	.
+%	.
+%	.
+%
+%
+%	Note: negative abundances are logarithmic relaive to H = 0.0
+%
+%	Elements not included in the data file ATDAT will not be read
+%
+%	Elements not present in this file will have no effect on the 
+%	default abundances.
+%
+%	The Header lines are not needed but they are useful
+%
+Abundances from Allen 1972
+22
+ 1   1.00
+ 2  -1.07
+ 3  -11.3
+ 4  -10.9
+ 5  -9.0
+ 6  -3.48
+ 7  -4.04
+ 8  -3.18
+ 9  -6.10
+10  -4.08
+11  -5.75
+12  -4.58
+13  -5.61
+14  -4.48
+15  -6.48
+16  -4.80
+17  -6.40
+18  -5.20
+19  -7.05
+20  -4.70
+26  -5.40
+28  -6.70

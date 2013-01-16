@@ -1,0 +1,212 @@
+The Mappings directory structure is:
+
+
+mappings ---------------------------- |                          | src lab
+--------------------          --------- | |          |         |        |
+mastercode   |      includes      dats abund workcode
+
+
+mappings:   Contains a mappings setup and the readme and other info docs as
+they change.
+
+src:    Contains the code area and the Makefile.
+
+Makefile.   This new makefile now controls all the building of MAPPINGS, and
+includes the fucntionality of the old builmap, preapre and cleanup scripts.  It
+takes one argument to control the operation:
+
+Type 'make help'    to see this menu Type 'make build'   to create executable
+from scratch and clean
+
+Type 'make prepare' to copy over '*.f' and '*.inc' files Type 'make compile' to
+create executable Type 'make backup'  to backup '*.f' and '*.inc' files Type
+'make clean'   to backup '*.f' and '*.inc', remove '*.o' Type 'make listing' to
+create listing of code
+
+The makefile has commented compile options for various machines, although you
+will need to experiemtn on any given
+
+machine.
+
+All the useful parameters are near the top of the makefile.
+
+
+mastercode: Contains a master copy of the code - only accessed by the Makefile.
+
+workcode:   The Makefile copies the .f files here.  These can be edited etc by
+the user.   The Makefile compiles these files to make the executable.
+
+lab:    This is where the executable is made and run.  The runtime files such
+as map.prefs are here and the essential dats directory with the runtime data
+files.  This new area (named after the old VAX area) keeps the output files
+away from the source code for the first time in a while.
+
+map3        The executable.
+
+map.prefs   Essential startup data - must be present.
+
+dats:       Contains the atomic data for MAPPINGS III. Read at runtime in
+mapinit.f.  Essential and must be present and complete.
+
+abund:      A set of useful abundance settings that can be read interactivley
+during a run.  Optional.
+
+
+Compiling & running: --------------------
+
+Untar the archive (already done or you wouldn't be reading this)
+
+> cd mappings/src
+
+> make build
+
+[wait a while....]
+
+> cd ../lab
+
+> map3
+
+
+
+Whats New: ----------
+
+1.0.0g-q:
+
+* Dust improved throughout code. Now the possibility of  different grain
+distributions, compositions and grain charges. Photoelectric heating by dust
+corrected and altered for new dust, also altered to increase calculation speed.
+Discussed in Groves et al 2003a (forthcoming) )
+
+* two new programs added: -radpress (in functions.f) to include the effects of
+radiation pressure (see Dopita el al 2002, ApJ, 572, 753 for discussion) 
+-dusttemp.f calculates individual grain temperatures and dust IR emission (see
+Groves et al 2003b (forthcoming) for discussion of program) 
+* New radiation vector added:
+
+PHOTDAT.ir		1802 bins, PHOTDAT.std plus 75 bins placed logarithmically below,
+to account for IR emission calculation.
+
+* PAH grains altered to include nominal PAH emission, as well as photoelectric
+effect and absorbtion.
+
+* Several small errors fixed in code.
+
+
+
+
+1.0.0d-g:
+
+* Many improvements to prepare for accurate X-ray preditictions.  New continuum
+calculations finalised.
+
+* Hydrogenic spectra for heavy elements made accurate, assuming case A and
+scaling the collisional rates from hydrogen - included recombination and
+collisional excitation.
+
+* Improved spectrum output.  New file specXXXX.ph4 or .sh4 contains a line by
+line wavelength sorted spectrum list for easier machine reading (may be easier
+for humans to read too!)  Includes a rough indication of reliability 1 - best,
+2 - good, 3 - as good as can be managed *or*  may be affected by external
+factors (ie Lyman Alpha)
+
+* A wider range of radiation vectors can be used depending on the detail
+required.
+
+PHOTDAT.old      360 bins above 5 eV - the old MAPPINGS II vector for backward
+compatibility and testing only.
+
+PHOTDAT.std      1727 bins over all wavelengths, a good all round spectrum
+
+PHOTDAT.short    939 bins above 5eV, same bins as std.  Quite accurate and
+faster than std when optical/IR continuum output is not needed, or during early
+iterations when speed is more useful.
+
+PHOTDAT.max      3069 bins over all wavelengths, very slow, maximum coverage
+PHOTDAT.hix      1489 bins above 5 eV - high res X-rays, same bins as max but
+saves on time by not putting optical/IR in the radiation vector for ionisation
+calculations. PHOTDAT.snx      2048 bins above 0.35 eV - highest res ionising
+and X-rays, quite slow and less coverage than max.  Best for dust free high res
+appilcations in the optical and X-rays.
+
+These files can be copied in place of dats/PHOTDAT for a given run.
+
+
+1.0.0c:
+
+* fixed lingering errors in conintuum calculations and speeded them up
+somewhat.
+
+1.0.0b:
+
+* All variables are declared! (this only took 20 years)  All files have
+'implicit none' included automatically so all future variables will be declared
+(or else!).
+
+* The energy/wavelength/frequency scale has been revised to reflect more recent
+data.  Lyman limit is  13.59844 eV, 1 eV is 1.60217733e-12 and the Lyman limit
+is 911.7534400 Angstroms. (h = 6.6260755e-27).
+
+* The spectral wavelength range in the radiation vectors now covers up to
+1.23984424449e-3 eV to 1.23984424449e4 eV (1000 microns to 1 A) in 1642 bins.
+'PHOTDAT.std' in mappings/exp/altdats - must be renamed PHOTDAT in lab/dats to
+be used.  'PHOTDAT.std' is already installed as lab/dats/PHOTDAT to begin with.
+
+* Other vector binnings can be substituted if all that IR is not necesary and a
+short vector of about 900 bins in the UV/X-ray is available. 'PHOTDAT.short' in
+mappings/exp/altdats - must be renamed PHOTDAT in lab/dats to be used.
+
+* The old MAPPINGS II vector can be used at the risk of some small binning
+errors - this is meant for testing only. 'PHOTDAT.old' in mappings/exp/altdats
+- must be renamed PHOTDAT in lab/dats to be used.
+
+* New wide spectral range contiuum calculations have been implemented. In
+particular free-free emission is very accurate over the whole range. Hydrogenic
+free-bound continuum now has 26 edges for all hydrogenic species.  Two photon
+continuum for Hydrogenic and Helium like ions has a new improved probability
+function and are scaled correctly for the first time in the diffuse field (The
+printout was always right)
+
+* All.sou files now output two columns (eV and Fnu), with the energy column
+representing the lower energy edge of each bin.  New .nfn files are output with
+nu and nuFnu columns.  Only .sou files can be used as sources.
+
+* All .sou and .nfn file are in 3D 1/4pi sr units - always.  External source
+files from say stellar atmospheres may need to be scaled appropriately.
+
+* All .sou and .nfn files have and addition headerline as an ID for the binning
+used: Old       = -1                : The MAPPINGS II binning Std       = -2 :
+The new full range spectrum Short     = -3                : The MAPPINGS III UV
+only spectrum = -4 : Mystery spectrum HIX       = -5 : High resolution above
+5eV SNX       = -6                : Optical/UV/X super resolution MAX       =
+-7                : Full coverage, max bins reserved  = -8...-1024 free      =
+-1025... -maxint  :free for use by users
+
+If you make your own photon binning please observe the above id restrictions.
+The number must be -ve so old code will just ignore new files.  See photsou.f
+for implementation details.
+
+The file PHOTDAT (in dats) contains the ID and energy bins to be used in a
+given run. const.inc implies a maximum value of 3072 bins.  The standard only
+used 1727 of these.  Simply copy the appropriate one in the dats directory and
+rename it 'PHOTDAT' if you wish to change the field.  The standard field is the
+initial setting.
+
+* The common block arrays now have parameter constants for size and the
+const.inc file can be edited to resize almost all of MAPPINGS.
+
+
+* The new .sou files are incompatible with MAPPINGS II/I.
+
+* Source files now work correctly in plane parallel and spherical corrdinates.
+The new code can output the final nebula+source or just nebula fields in nuFnu
+or Fnu files.
+
+* The .sou and .nfn files are quite accurate in plane parallel geometry and
+accurate line/continuum ratios can be determined from them. However, spherical
+models have small (~1%) errors due to dilution approximations and the
+photnXXXX.ph4 files should be used for all accurate line ratio work.
+
+* The new code is slower.
+
+* The old dust code should only be used if the 'PHOTDAT.old' is in use until
+the dust data is revised.

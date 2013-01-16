@@ -1,0 +1,40 @@
+%
+%	SMC standard abundances: Ref: Russell & Dopita
+%
+%	FORMAT
+%	Title
+%	# entries
+%	Z  Abundance	
+%	.
+%	.
+%	.
+%
+%
+%	Note: negative abundances are logarithmic relaive to H = 0.0
+%
+%	Elements not included in the data file ATDAT will not be read
+%
+%	Elements not present in this file will have no effect on the 
+%	default abundances.
+%
+%	The Header lines are not needed but they are useful
+%
+abundances PN lmc87
+16
+ 1   1.00
+ 2   0.178
+ 6   1e-5
+ 7   3.1e-4	
+ 8   1.9e-4
+10   1.1e-4
+11  -5.92
+12   2e-5
+13  -5.60
+14   2e-5
+16   6.8e-6
+17   1e-7
+18   3.1e-6
+20  -6.16
+26  -5.11
+28  -6.14
+

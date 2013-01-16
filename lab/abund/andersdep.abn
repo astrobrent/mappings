@@ -1,0 +1,42 @@
+%          
+% SOLAR ABUNDANCES:ref anders & grevesse 1989 geochimica et cosmochmnica 
+% "acta," 53:197        
+%          
+% Depleted according to Shull         
+% FORMAT         
+% Title         
+% # entries        
+% Z  Abundance        
+% .         
+% .         
+% .         
+%          
+%          
+% Note: negative abundances are logarithmic relaive to H = 0
+%          
+% Elements not included in the data file ATDAT will not be read
+%            
+% Elements not present in this file will have no effect on the
+% default abundances.          
+%            
+% The Header lines are not needed but they are useful  
+%            
+Abundances from Anders 1989  Depleted        
+16            
+ 1  1.000           
+ 2 -1.010           
+ 6 -3.741           
+ 7 -4.172           
+ 8 -3.292           
+10 -3.910           
+11 -6.272           
+12 -5.119    
+13 -7.229    
+14 -5.450    
+16 -5.012    
+17 -6.801    
+18 -5.440    
+20 -8.163    
+26 -6.330    
+28 -7.148    
+

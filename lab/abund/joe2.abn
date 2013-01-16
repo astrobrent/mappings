@@ -1,0 +1,41 @@
+%
+%	Primordial abundances for Joe Silk cooling curves
+%
+%	[Fe/H] =-2
+%
+%	FORMAT
+%	Title
+%	# entries
+%	Z  Abundance	
+%	.
+%	.
+%	.
+%
+%
+%	Note: negative abundances are logarithmic relaive to H = 0.0
+%
+%	Elements not included in the data file ATDAT will not be read
+%
+%	Elements not present in this file will have no effect on the 
+%	default abundances.
+%
+%	The Header lines are not needed but they are useful
+%
+Primordial Abundance Ratios  
+16
+ 1   1.00
+ 2  -1.19382
+ 6  -5.44
+ 7  -5.95
+ 8  -4.57
+10  -5.41
+11  -7.67
+12  -6.02
+13  -7.83
+14  -6.05
+16  -6.79
+17  -8.5
+18  -6.94
+20  -7.24
+26  -6.33
+28  -7.75

@@ -304,7 +304,6 @@ c
       if (ilgg(1:2) .eq. 'P3') call photo3
       if (ilgg(1:2) .eq. 'P4') call photo4
       if (ilgg(1:2) .eq. 'P5') call photo5
-      if (ilgg(1:1) .eq. 'E') goto 2000
       if (ilgg(1:2) .eq. 'H1') call sphere1
       if (ilgg(1:1) .eq. 'E') goto 2000
       if (ilgg(1:1) .eq. 'R') goto 100
@@ -315,21 +314,16 @@ c      if (ilgg(1:1) .eq. 'T') call testsub
       if (ilgg(1:2) .eq. 'PP') call phocrv
 c
       if (runmode.ne.'batchrun') then
-c
-c      dtarr = dtime(tarray1)
-c
- 400  format('Subroutine time (map2,sys): ',2(f8.1,1x),/) 
-      write(*,400) tarray1(1),tarray1(2)
-c
+c        dtarr = dtime(tarray1)
+ 400    format('Subroutine time (map2,sys): ',2(f8.1,1x),/) 
+        write(*,400) tarray1(1),tarray1(2)
       endif
 c
       goto 320
 
       if (runmode.ne.'batchrun') then
-
-      write(*, 390) 
- 390  format(/' That code is not yet available : : : : : : : : : :')
-
+        write(*, 390) 
+ 390    format(/' That code is not yet available : : : : : : : : : :')
       endif
 
       goto 320

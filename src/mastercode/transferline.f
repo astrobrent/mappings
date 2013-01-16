@@ -29,6 +29,7 @@ c
 
 cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+c
       double precision function transferout(dismul, tau)
 c
 c  Simply the attenuation of radition across a depth tau
@@ -54,7 +55,8 @@ c
 c
 cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
-      double precision function localout(dismul, tau)
+c
+       double precision function localout(dismul, tau)
 c
 c  A zone producing a uniform field.  Emission at one side
 c sees a different optical depth to escape than at the other for a given direction
@@ -82,6 +84,7 @@ c
 c
 cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+c
       double precision function meanfield(dismul, tau)
 c
 c A field crossing a zone depth tau, attenuated to exp(-tau)

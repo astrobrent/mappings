@@ -186,7 +186,7 @@ c
         dr = 1.d0
 c
         if (t.le.10.d0) t = 10.d0**t
-        if (dh.le.0.d0) t = 10.d0**t
+        if (dh.le.0.d0) dh = 10.d0**dh
         if (wdil.gt.0.5d0) wdil = 0.5d0
         wdilt0 = 0.d0
 c

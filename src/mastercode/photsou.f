@@ -937,7 +937,7 @@ c
          read(*, *) eng1
          write(*, 1320)
  1320    format(//,' Give energy of IR cutoff of BBB, eng2'
-     &            ,' (~0.1eV) : ',$)
+     &            ,' (~0.01eV) : ',$)
          read(*, *) eng2
          write(*, 1325)
  1325    format(//,' Give fraction of BBB, k1 : ',$)

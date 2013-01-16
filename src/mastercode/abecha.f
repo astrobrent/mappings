@@ -54,7 +54,7 @@ c
             read (luf,*) at,zi
             if (zmap(at).ne.0) then
                atom = zmap(at)
-               if (zi.lt.0.d0) zi = 10**zi
+               if (zi.lt.0.d0) zi = 10.d0**zi
                zs(atom)=zi
             endif
          enddo
@@ -67,13 +67,13 @@ c
 c
 c
 c     
-c     Default elemental abundances for Local ISM (Not Solar)
+c     Default elemental abundances 
 c     
-c     H  1.000E+00    He 1.000E-01    C  8.130E-04    N  3.720E-05
-c     O  5.010E-04    Ne 7.940E-05    Mg 3.720E-05    Si 4.270E-05
-c     S  1.150E-05    Ar 2.630E-06    Ca 1.320E-06    Fe 2.630E-05
+c     H  1.000E+00    He 9.770E-02    C  2.570E-04    N  6.030E-05
+c     O  4.570E-04    Ne 1.230E-04    Mg 3.390E-05    Si 3.240E-05
+c     S  1.620E-05    Ar 6.310E-06    Ca 2.290E-06    Fe 2.820E-05
 cc    
-      abnfile = 'Default Abundances'
+      abnfile = 'Default Solar Abundances'
 c     
       do i = 1,atypes
          zion(i) = zion0(i)
@@ -103,7 +103,7 @@ c
          write(*, 310) (elem(j), zion(j),j = 1, atypes)
  310     format(4(4x,a2,1pe10.3))
          write(*, 327) zgas
- 327     format(' (Metallicity (Zgas) is',f8.4,' that of Sol)'/)
+ 327     format(' (Metallicity (Zgas) is',f8.4,' x Solar)'/)
          
          write(*, 330)
  330     format(' Change abundances (y/n) : ',$)
@@ -254,7 +254,7 @@ c
                read (luf,*) at,zi
                if (zmap(at).ne.0) then
                   atom = zmap(at)
-                  if (zi.lt.0.d0) zi = 10**zi
+                  if (zi.lt.0.d0) zi = 10.d0**zi
                   zion(atom)=zi
                endif
             enddo
